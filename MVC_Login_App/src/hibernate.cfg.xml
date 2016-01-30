@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+ 
+<hibernate-configuration>
+    <session-factory>
+        <!-- Database connection settings -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://173.254.28.134:3306/belldoin_cit360</property>
+        <property name="hibernate.connection.username">belldoin_rich</property>
+        <property name="hibernate.connection.password">C@$eyb3!!</property>
+        
+        <!-- Mention here all the model classes along with their package name -->
+ 		<mapping resource = "User.hbm.xml"/>
+ 		
+ 		 
+    </session-factory>
+</hibernate-configuration>
