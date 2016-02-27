@@ -7,10 +7,10 @@
 <link href="css/style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-<form method="post" action="LoginServlet">
+<form method="post" action="LoginServlet" id="loginform">
 <div style="padding: 100px 0 0 250px;">
 <div id="login-box">
-<h2>Login Page</h2>
+<h2>Owner and Car Database</h2>
 Please provide your credential to use this website
 <br>
 <br>

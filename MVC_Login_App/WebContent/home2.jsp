@@ -16,6 +16,12 @@
          <h1>Result Page</h1>
              <b>This is Sample Result Page</b><br/>
              <%=new Date()%></br>
+             <%
+                 User user = (User) session.getAttribute("user");
+             %>     
+             <b>Welcome <%= user.getFirstName() + " " + user.getLastName()%></b>     
+             <br/>
+             <a href="logout.jsp">Logout</a>
          </p>
  
          <table>

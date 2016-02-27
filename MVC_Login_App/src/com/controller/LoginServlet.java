@@ -21,7 +21,7 @@ public class LoginServlet extends HttpServlet {
      User user = loginService.getUserByUserId(userId);
      if(result == true){
          request.getSession().setAttribute("user", user);      
-         response.sendRedirect("home.jsp");
+         response.sendRedirect("program.jsp");
      }
      else{
          response.sendRedirect("error.jsp");
