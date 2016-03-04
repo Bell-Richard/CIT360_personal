@@ -6,6 +6,7 @@
 <title>Car Owner Database</title>
 <link href="css/style.css" rel="stylesheet" type="text/css" />
 </head>
+
 <body>
 <div style="padding: 100px 0 0 250px;">
 <div id="login-box">
@@ -13,15 +14,13 @@
 Please select an option below:
 <br>
 <br>
-<input style="margin-left:20px;" type="submit" value="Owner Management" />
-
+<a href = "OwnerMenu.jsp"> <input style="margin-left:20px;" type="button" value="Owner Management"/>
+</a>
 <br />
 <br />
 <br />
-
 
 <input style="margin-left:20px;" type="submit" value="Car Management" />
-
 
 <br />
 <br />

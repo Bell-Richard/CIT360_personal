@@ -1,38 +1,25 @@
-package com.login.model;
+package MVC_Login_App.src.com.login.model;
 
-import java.util.Set;
-
-import javax.persistence.Column;
+import java.io.Serializable;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
-@Entity
-@Table(name = "owner")
-public class Owner {
+import org.hibernate.mapping.Set;
+
+
+public class Owner implements Serializable {
 
 	//-----------------//
 	// Column mappings //
 	//-----------------//
-	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	@Column(name="id")
-	private Integer id;
-	
-	@Column(name="first_name")
+	private int id;
 	private String firstName;
-	
-	@Column(name="last_name")
 	private String lastName;
-	
-	@Column(name="gender")
 	private String gender;
 	
-	@OneToMany(mappedBy="ownerMapping")
-	private Set<Car> cars;
+//	private Set<Car> cars;
 	
 	//--------------//
 	// Constructors //
@@ -92,14 +79,14 @@ public class Owner {
 	}
 	
 	// Cars
-	public Set<Car> getCars() {
-		return this.cars;
-	}
+//	public Set<Car> getCars() {
+//		return this.cars;
+//	}
 	
-	public void setCars(Set<Car> someCars) {
-		this.cars = someCars;
-	}
-	
+//	public void setCars(Set<Car> someCars) {
+//		this.cars = someCars;
+//	}
+//	
 	// Full name getter
 	public String getFullName() {
 		return this.firstName + " " + this.lastName;

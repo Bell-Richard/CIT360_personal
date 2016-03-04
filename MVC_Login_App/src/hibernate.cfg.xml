@@ -14,6 +14,7 @@
         
         <!-- Mention here all the model classes along with their package name -->
  		<mapping resource = "User.hbm.xml"/>
+ 		<mapping resource = "Owner.hbm.xml"/>
  		
  		 
     </session-factory>

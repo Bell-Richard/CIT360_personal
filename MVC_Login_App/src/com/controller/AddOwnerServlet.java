@@ -7,38 +7,35 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
  
-import com.login.model.User;
-import com.service.RegisterService;
+import com.login.model.Owner;
+import com.service.AddOwnerService;
+
  
- 
-public class RegisterServlet extends HttpServlet {
+public class AddOwnerServlet extends HttpServlet {
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
      response.setContentType("text/html;charset=UTF-8");
      PrintWriter out = response.getWriter();
      String firstName = request.getParameter("firstName");
-     String middleName = request.getParameter("middleName");
      String lastName = request.getParameter("lastName");
-     String email = request.getParameter("email");
-     String userId = request.getParameter("userId");
-     String password = request.getParameter("password");
-     User user = new User(firstName,middleName,lastName, email,userId, password);
-             
+     String gender = request.getParameter("gender");
+     Owner owner = new Owner(firstName,lastName, gender);
+          
      try { 
-         RegisterService registerService = new RegisterService();
-         boolean result = registerService.register(user);      
+         AddOwnerService addOwnerService = new AddOwnerService();
+         boolean result = addOwnerService.addOwner(owner);      
          out.println("<html>");
          out.println("<head>");      
-         out.println("<title>Registration Successful</title>");    
+         out.println("<title>Add Owner Successful</title>");    
          out.println("</head>");
          out.println("<body>");
          out.println("<center>");
          if(result){
-             out.println("<h1>Thanks for Registering with us :</h1>");
-             out.println("To login with new UserId and Password<a href=login.jsp>Click here</a>");
+             out.println("<h1>New Owner added Successfully:</h1>");
+             out.println("To return to the Owner Management Menu <a href=OwnerMenu.jsp>Click here</a>");
          }else{
-             out.println("<h1>Registration Failed</h1>");
-             out.println("To try again<a href=register.jsp>Click here</a>");
+             out.println("<h1>Add Owner Failed</h1>");
+             out.println("To try again<a href=AddNewOwner.jsp>Click here</a>");
          }
          out.println("</center>");
          out.println("</body>");

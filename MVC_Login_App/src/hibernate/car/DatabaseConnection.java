@@ -3,6 +3,9 @@ package hibernate.car;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
+
+import com.login.model.Owner;
+
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 
 /*

@@ -5,6 +5,8 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Scanner;
 
+import com.login.model.Owner;
+
 public class OwnerManagement {
 
 	static Scanner userInput = new Scanner(System.in);

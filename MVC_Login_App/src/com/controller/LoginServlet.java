@@ -1,4 +1,4 @@
-package com.controller;
+package MVC_Login_App.src.com.controller;
 
 import java.io.IOException;
 import javax.servlet.ServletException;

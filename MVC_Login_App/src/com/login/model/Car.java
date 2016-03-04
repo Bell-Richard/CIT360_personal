@@ -1,4 +1,4 @@
-package com.login.model;
+package MVC_Login_App.src.com.login.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

@@ -6,6 +6,8 @@ import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
 
+import com.login.model.Owner;
+
 public class CarManagement {
 	
 	static Scanner userInput = new Scanner(System.in);

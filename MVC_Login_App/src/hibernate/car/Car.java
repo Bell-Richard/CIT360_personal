@@ -9,6 +9,8 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import com.login.model.Owner;
+
 @Entity
 @Table(name = "car")
 public class Car {
