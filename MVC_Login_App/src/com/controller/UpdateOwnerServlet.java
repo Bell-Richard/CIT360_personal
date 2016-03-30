@@ -1,4 +1,4 @@
-package MVC_Login_App.src.com.controller;
+package com.controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -20,7 +20,7 @@ public class UpdateOwnerServlet extends HttpServlet {
      String firstName = request.getParameter("firstName");
      String lastName = request.getParameter("lastName");
      String gender = request.getParameter("gender");
-     Owner owner = new Owner(id, firstName,lastName, gender);
+     Owner owner = new Owner(firstName,lastName, gender);
           
      try { 
          AddOwnerService addOwnerService = new AddOwnerService();

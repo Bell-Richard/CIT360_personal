@@ -76,7 +76,7 @@ width: max-content;
     width:333px;
     height: 352px;
     padding: 58px 76px 0 76px;
-    color: #ebebeb;
+    color: black;
     font: 12px Arial, Helvetica, sans-serif;
     margin-top: -70px;
     background: url(../images/login-box-backg.png) no-repeat left top;
@@ -89,7 +89,7 @@ width: max-content;
 #login-box h2 {
     padding:0;
     margin:0;
-    color: #ebebeb;
+    color: black;
     font: bold 44px "Calibri", Arial;
 }
  
@@ -118,7 +118,7 @@ width: max-content;
     border: 1px solid #0d2c52;
     background-color:#1e4f8a;
     font-size: 16px;
-    color: #ebebeb;
+    color: white;
 }
  
  
@@ -129,6 +129,6 @@ width: max-content;
 }
  
 .login-box-options a {
-    color: #ebebeb;
+    color: black;
     font-size: 11px;
 }

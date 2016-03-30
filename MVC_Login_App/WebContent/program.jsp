@@ -20,7 +20,7 @@ Please select an option below:
 <br />
 <br />
 
-<input style="margin-left:20px;" type="submit" value="Car Management" />
+<a href ="CarMenu.jsp"><input style="margin-left:20px;" type="button" value="Car Management" /> </a>
 
 <br />
 <br />
